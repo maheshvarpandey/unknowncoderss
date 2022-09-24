@@ -3,6 +3,7 @@ import {
   RouterProvider,
   Link,
 } from "react-router-dom";
+import ContactUs from "./components/ContactUs/ContactUs";
 import MainPage from "./components/MainPage/MainPage";
 
 const router = createBrowserRouter([
@@ -13,8 +14,8 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "about",
-    element: <div>About</div>,
+    path: "contact",
+    element: <ContactUs />,
   },
 ]);
 

@@ -2,6 +2,7 @@
 import AppWrapper from '../AppWrapper'
 import childImg from '../../assets/child.jpg'
 import childImg1 from '../../assets/child1.jpg'
+import { Link } from 'react-router-dom'
 
 const MainPage = () => {
     return (
@@ -15,7 +16,9 @@ const MainPage = () => {
                             </h1>
                             <p className="mb-8 leading-relaxed">We unknown coders provides free education for needy children guide them to each point of their future.</p>
                             <div className="flex justify-center">
-                                <button className="inline-flex px-6 py-2 text-lg text-white bg-indigo-500 border-0 rounded focus:outline-none hover:bg-indigo-600">Contact Me</button>
+                                <Link to={'/contact'}>
+                                    <button className="inline-flex px-6 py-2 text-lg text-white bg-indigo-500 border-0 rounded focus:outline-none hover:bg-indigo-600">Contact Me</button>
+                                </Link>
                                 <a href='tel:9814639815'>
                                     <button className="inline-flex px-6 py-2 ml-4 text-lg text-gray-700 bg-gray-200 border-0 rounded focus:outline-none hover:bg-gray-300">Call me</button>
                                 </a>
@@ -45,11 +48,14 @@ const MainPage = () => {
                                     </div>
                                     <div className="flex-grow">
                                         <p className="text-base leading-relaxed">Studying in open environment give you power to make your mind more stronger like our guru's are used to do.</p>
-                                        <a className="inline-flex items-center mt-3 text-indigo-500">Learn More
-                                            <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                                                <path d="M5 12h14M12 5l7 7-7 7" />
-                                            </svg>
-                                        </a>
+                                        <Link to={'/contact'}>
+                                            <a className="inline-flex items-center mt-3 text-indigo-500">Learn More
+                                                <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                                </svg>
+                                            </a>
+                                        </Link>
+
                                     </div>
                                 </div>
                             </div>
@@ -66,11 +72,13 @@ const MainPage = () => {
                                     </div>
                                     <div className="flex-grow">
                                         <p className="text-base leading-relaxed">If your body will be healthy then only your mind will be healthiest.</p>
-                                        <a className="inline-flex items-center mt-3 text-indigo-500">Learn More
-                                            <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                                                <path d="M5 12h14M12 5l7 7-7 7" />
-                                            </svg>
-                                        </a>
+                                        <Link to={'/contact'}>
+                                            <a className="inline-flex items-center mt-3 text-indigo-500">Learn More
+                                                <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                                </svg>
+                                            </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -88,11 +96,13 @@ const MainPage = () => {
                                     </div>
                                     <div className="flex-grow">
                                         <p className="text-base leading-relaxed">Learn from playing games like puzzle and many games which boosts the thinking power.</p>
-                                        <a className="inline-flex items-center mt-3 text-indigo-500">Learn More
-                                            <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                                                <path d="M5 12h14M12 5l7 7-7 7" />
-                                            </svg>
-                                        </a>
+                                        <Link to={'/contact'}>
+                                            <a className="inline-flex items-center mt-3 text-indigo-500">Learn More
+                                                <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                                </svg>
+                                            </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -114,11 +124,13 @@ const MainPage = () => {
                                 <div className="flex-grow">
                                     <h2 className="mb-3 text-lg font-medium text-gray-900 title-font">Book session</h2>
                                     <p className="text-base leading-relaxed">Book session for your child and let's build the strong mind set of your child.</p>
-                                    <a className="inline-flex items-center mt-3 text-indigo-500">Learn More
-                                        <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                                            <path d="M5 12h14M12 5l7 7-7 7" />
-                                        </svg>
-                                    </a>
+                                    <Link to={'/contact'}>
+                                        <a className="inline-flex items-center mt-3 text-indigo-500">Learn More
+                                            <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                                <path d="M5 12h14M12 5l7 7-7 7" />
+                                            </svg>
+                                        </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="flex flex-col items-center mb-10 lg:items-start">
@@ -132,11 +144,13 @@ const MainPage = () => {
                                 <div className="flex-grow">
                                     <h2 className="mb-3 text-lg font-medium text-gray-900 title-font">Take Demo</h2>
                                     <p className="text-base leading-relaxed">In demo class you and your children will get to know the power of best learning or learning with fun.</p>
-                                    <a className="inline-flex items-center mt-3 text-indigo-500">Learn More
-                                        <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                                            <path d="M5 12h14M12 5l7 7-7 7" />
-                                        </svg>
-                                    </a>
+                                    <Link to={'/contact'}>
+                                        <a className="inline-flex items-center mt-3 text-indigo-500">Learn More
+                                            <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                                <path d="M5 12h14M12 5l7 7-7 7" />
+                                            </svg>
+                                        </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="flex flex-col items-center mb-10 lg:items-start">
@@ -149,11 +163,13 @@ const MainPage = () => {
                                 <div className="flex-grow">
                                     <h2 className="mb-3 text-lg font-medium text-gray-900 title-font">Pay now</h2>
                                     <p className="text-base leading-relaxed">Pay and see the changes in your children form the other child.</p>
-                                    <a className="inline-flex items-center mt-3 text-indigo-500">Learn More
-                                        <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                                            <path d="M5 12h14M12 5l7 7-7 7" />
-                                        </svg>
-                                    </a>
+                                    <Link to={'/contact'}>
+                                        <a className="inline-flex items-center mt-3 text-indigo-500">Learn More
+                                            <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                                <path d="M5 12h14M12 5l7 7-7 7" />
+                                            </svg>
+                                        </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -236,7 +252,9 @@ const MainPage = () => {
                                 </div>
                             </div>
                         </div>
-                        <button className="flex px-8 py-2 mx-auto mt-16 text-lg text-white bg-indigo-500 border-0 rounded focus:outline-none hover:bg-indigo-600">Contact Us</button>
+                        <Link to={'/contact'}>
+                            <button className="flex px-8 py-2 mx-auto mt-16 text-lg text-white bg-indigo-500 border-0 rounded focus:outline-none hover:bg-indigo-600">Contact Us</button>
+                        </Link>
                     </div>
                 </section>
                 {/* <section className="text-gray-700 border-t border-gray-200 body-font">
