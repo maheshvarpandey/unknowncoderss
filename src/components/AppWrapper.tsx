@@ -5,13 +5,57 @@ const AppWrapper = ({ children }: any) => {
     return (
         <div>
             <div>
-                <header className="text-gray-700 body-font border-b border-gray-200">
+                <nav className="navbar px-6 my-4 w-full bg-white sticky top-0 border-gray-200 shadow-md">
+                    <div className="container-lg px-0">
+                        <div className="flex w-full items-center">
+                            <a className="nav-brand mr-auto ml-0 text-xl logoText" href="#">Unknown Coderss</a>
+                            <button navbar-trigger className="navbar-trigger ml-auto mr-0 mb-0 lg:hidden xl:hidden" type="button" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                                <span className="navbar-trigger-icon">
+                                    <span className="navbar-trigger-bar mt-1"><span className="hidden origin-[10%_10%] rotate-45" /></span>
+                                    <span className="bar2 navbar-trigger-bar mt-2" />
+                                    <span className="bar3 navbar-trigger-bar mt-2"><span className="mt-mt-[0.4375rem] hidden origin-[10%_90%] -rotate-45" /></span>
+                                </span>
+                            </button>
+                        </div>
+                        <div className="collapse navbar-collapse" navbar-menu>
+                            <ul className="navbar-nav">
+                                <li>
+                                    <a className="nav-link" aria-current="page" href="#">
+                                        <i className="material-icons mr-2 text-base opacity-60">article</i>
+                                        <span>Chat</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a className="nav-link" href="#">
+                                        <i className="material-icons mr-2 text-base opacity-60">apps</i>
+                                        <span>About</span>
+                                    </a>
+                                </li>
+                                <li className="flex">
+                                    <a className="nav-link" href="#">
+                                        <i className="material-icons mr-2 text-base opacity-60">view_carousel</i>
+                                        <span>Contact Us</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a className="nav-link" href="#">
+                                        {/* <i className="fa-brands fa-instagram mr-2 text-base opacity-60" /> */}
+                                        <i className="fa-brands fa-instagram mr-2 text-base opacity-60" />
+                                        <span>Instagram</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                {/* <header className="text-gray-700 sticky top-0 body-font border-b border-gray-200 bg-white shadow-md">
                     <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-                        <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" href="https://tailblocks.cc" target="_blank" rel="noreferrer">
+                        <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" href="" rel="noreferrer">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
                                 <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
                             </svg>
-                            <span className="ml-3 text-xl">TAILBLOCKS</span>
+                            <span className="ml-3 text-xl">Unknown Coderss</span>
                         </a>
                         <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
                             <a className="mr-5 hover:text-gray-900">First Link</a>
@@ -25,7 +69,7 @@ const AppWrapper = ({ children }: any) => {
                             </svg>
                         </button>
                     </div>
-                </header>
+                </header> */}
                 <div>
                     {children}
                 </div>
@@ -174,7 +218,7 @@ const AppWrapper = ({ children }: any) => {
                     </div>
                     <div className="bg-gray-200">
                         <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-                            <p className="text-gray-500 text-sm text-center sm:text-left">© 2020 Tailwind Blocks —
+                            <p className="text-gray-500 text-sm text-center sm:text-left">© 2020 Unknown Coderss —
                                 <a href="https://twitter.com/knyttneve" className="text-gray-600 ml-1" target="_blank" rel="noopener noreferrer">@knyttneve</a>
                             </p>
                             <span className="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm">Enamel pin tousled raclette tacos irony</span>
